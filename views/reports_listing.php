@@ -18,8 +18,8 @@
 				<tr>
 					<td>
 						<ul class="link-toggle report-list-toggle lt-icons-and-text">
-							<li class="active"><a href="#rb_list-view" class="list"><?php echo Kohana::lang('ui_main.list'); ?></a></li>
-							<li><a href="#rb_map-view" class="map"><?php echo Kohana::lang('ui_main.map'); ?></a></li>
+							<li><a href="#rb_list-view" class="list"><?php echo Kohana::lang('ui_main.list'); ?></a></li>
+							<li class="active"><a href="#rb_map-view" class="map"><?php echo Kohana::lang('ui_main.map'); ?></a></li>
 						</ul>
 					</td>
 					<td><?php echo $pagination; ?></td>
@@ -39,7 +39,7 @@
 		<!-- Report listing -->
 		<div class="r_cat_tooltip"><a href="#" class="r-3"></a></div>
 		<div class="rb_list-and-map-box">
-			<div id="rb_list-view">
+			<div id="rb_list-view" style="display:none;">
 			<?php
 				foreach ($incidents as $incident)
 				{
@@ -144,7 +144,7 @@
 				</div>
 			<?php } ?>
 			</div>
-			<div id="rb_map-view" style="display:none; width: 590px; height: 384px; border:1px solid #CCCCCC; margin: 3px auto;">
+			<div id="rb_map-view" style="display: block; width: 590px; height: 384px; border:1px solid #CCCCCC; margin: 3px auto;">
 			</div>
 		</div>
 		<!-- /Report listing -->
@@ -155,8 +155,8 @@
 				<tr>
 					<td>
 						<ul class="link-toggle report-list-toggle lt-icons-and-text">
-							<li class="active"><a href="#rb_list-view" class="list"><?php echo Kohana::lang('ui_main.list'); ?></a></li>
-							<li><a href="#rb_map-view" class="map"><?php echo Kohana::lang('ui_main.map'); ?></a></li>
+							<li><a href="#rb_list-view" class="list"><?php echo Kohana::lang('ui_main.list'); ?></a></li>
+							<li class="active"><a href="#rb_map-view" class="map"><?php echo Kohana::lang('ui_main.map'); ?></a></li>
 						</ul>
 					</td>
 					<td><?php echo $pagination; ?></td>
@@ -171,5 +171,8 @@
 				</tr>
 			</table>
 		</div>
-		<!-- /Bottom paginator -->
+    <!-- /Bottom paginator -->
+    <script>
+    createIncidentMap();
+    </script>
 	        
