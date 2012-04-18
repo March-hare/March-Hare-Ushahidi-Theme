@@ -2391,3 +2391,15 @@ div.ci_colorfade {
 div.ci_checkin {
 	border-bottom:1px solid #B3B3B3;
 }
+
+div#mainmenu ul li:first-child,
+div.submit-incident,
+div#searchbox,
+div#header,
+div#footer,
+header,
+div#content div.big-block h1.heading
+{
+  display: none;
+}
+
