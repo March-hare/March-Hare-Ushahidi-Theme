@@ -160,6 +160,6 @@
     <!-- /Bottom paginator -->
     <script>
     createIncidentMap();
-    showIncidentMap();
+    switchViews($('a.map')[0]);
     </script>
 	        
