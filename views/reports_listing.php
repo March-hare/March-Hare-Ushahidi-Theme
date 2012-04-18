@@ -23,14 +23,7 @@
 						</ul>
 					</td>
 					<td><?php echo $pagination; ?></td>
-					<td><?php echo $stats_breadcrumb; ?></td>
-					<td class="last">
-						<ul class="link-toggle lt-icons-only">
-							<?php //@todo Toggle the status of these links depending on the current page ?>
-							<li><a href="#" class="prev" id="page_<?php echo $previous_page; ?>"><?php echo Kohana::lang('ui_main.previous'); ?></a></li>
-							<li><a href="#" class="next" id="page_<?php echo $next_page; ?>"><?php echo Kohana::lang('ui_main.next'); ?></a></li>
-						</ul>
-					</td>
+					<td class="last"><?php echo $stats_breadcrumb; ?></td>
 				</tr>
 			</table>
 		</div>
@@ -160,19 +153,13 @@
 						</ul>
 					</td>
 					<td><?php echo $pagination; ?></td>
-					<td><?php echo $stats_breadcrumb; ?></td>
-					<td class="last">
-						<ul class="link-toggle lt-icons-only">
-							<?php //@todo Toggle the status of these links depending on the current page ?>
-							<li><a href="#" class="prev" id="page_<?php echo $previous_page; ?>"><?php echo Kohana::lang('ui_main.previous'); ?></a></li>
-							<li><a href="#" class="next" id="page_<?php echo $next_page; ?>"><?php echo Kohana::lang('ui_main.next'); ?></a></li>
-						</ul>
-					</td>
+					<td class="last"><?php echo $stats_breadcrumb; ?></td>
 				</tr>
 			</table>
 		</div>
     <!-- /Bottom paginator -->
     <script>
     createIncidentMap();
+    showIncidentMap();
     </script>
 	        
