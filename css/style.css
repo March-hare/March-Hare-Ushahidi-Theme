@@ -2203,7 +2203,7 @@ a.btn-show { display:none; }
 .ui-accordion .ui-accordion-header a.reset, a.reset { color:#981e01;  }
 
 /* Filter content boxes */
-.f-category-box { height:258px; }
+.f-category-box { height:400px; }
 .f-location-box .map { width: 259px !important; height: 280px !important; padding: 0; margin: 0;}
 .f-location-box .rb_location-radius { width: 255px; height: 275px; }
 .f-type-box {}
